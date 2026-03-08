@@ -98,6 +98,10 @@ label span {
   font-size: 14px;
 }
 
+#submit-button:hover {
+  cursor: pointer;
+}
+
 /* Form Group Description */
 #password-description {
   font-size: 14px;

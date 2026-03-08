@@ -97,6 +97,10 @@ label span {
   font-size: 14px;
 }
 
+#submit-button:hover {
+  cursor: pointer;
+}
+
 /* Footer */
 
 #footer p {
