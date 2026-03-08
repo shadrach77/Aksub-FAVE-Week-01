@@ -29,6 +29,7 @@
             class="text-input-field"
             placeholder="johndoe"
           />
+          <p class="empty-error error-message">This field can't be empty</p>
         </div>
 
         <div class="form-group" id="form-group-email">
@@ -40,6 +41,7 @@
             class="text-input-field"
             placeholder="johndoe@gmail.com"
           />
+          <p class="empty-error error-message">This field can't be empty</p>
         </div>
 
         <div class="form-group" id="form-group-password">
@@ -53,9 +55,13 @@
             class="text-input-field"
             placeholder="*******"
           />
-          <p>
+          <p id="password-description">
             Password needs to have a minimal of 8 characters, 1 uppercase and 1
             symbol
+          </p>
+          <p class="empty-error error-message">This field can't be empty</p>
+          <p id="incorrect-format-error" class="error-message">
+            Password does not meet criteria
           </p>
         </div>
 
@@ -70,6 +76,10 @@
             class="text-input-field"
             placeholder="*******"
           />
+          <p class="empty-error error-message">This field can't be empty</p>
+          <p id="incorrect-retype-password-error" class="error-message">
+            Password does not match
+          </p>
         </div>
 
         <div class="form-group" id="form-group-checkbox">
@@ -78,6 +88,8 @@
             >I agree to all term, privacy policy and fees</label
           >
         </div>
+
+        <button type="submit" id="submit-button">Register</button>
       </form>
 
       <section id="footer">
@@ -87,4 +99,5 @@
       </section>
     </div>
   </body>
+  <script src="./src/js/register.js"></script>
 </html>

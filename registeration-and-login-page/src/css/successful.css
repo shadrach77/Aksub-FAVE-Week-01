@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #151515;
+  --secondary-color: #878787;
+  --border-color: #ebebeb;
+  --accent-color: #ff954a;
+  --danger-color: #ff6161;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk";
+  color: var(--primary-color);
+}
+
+#centering-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+p a {
+  columns: var(--accent-color);
+}
