@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./src/css/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="centering-container">
+      <section id="header">
+        <h1>Create your account</h1>
+        <p>Let's get started with your 30 days free trial.</p>
+      </section>
+
+      <form action="">
+        <div class="form-group" id="form-group-name">
+          <label for="name">Name<span id="label-asterisk">*</span></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="text-input-field"
+            placeholder="johndoe"
+          />
+        </div>
+
+        <div class="form-group" id="form-group-email">
+          <label for="email">Email<span id="label-asterisk">*</span></label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="text-input-field"
+            placeholder="johndoe@gmail.com"
+          />
+        </div>
+
+        <div class="form-group" id="form-group-password">
+          <label for="password"
+            >Password<span id="label-asterisk">*</span></label
+          >
+          <input
+            type="text"
+            name="password"
+            id="password"
+            class="text-input-field"
+            placeholder="*******"
+          />
+          <p>
+            Password needs to have a minimal of 8 characters, 1 uppercase and 1
+            symbol
+          </p>
+        </div>
+
+        <div class="form-group" id="form-group-retype-password">
+          <label for="retype-password"
+            >Retype Password<span id="label-asterisk">*</span></label
+          >
+          <input
+            type="text"
+            name="retype-password"
+            id="retype-password"
+            class="text-input-field"
+            placeholder="*******"
+          />
+        </div>
+
+        <div class="form-group" id="form-group-checkbox">
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="checkbox"
+            >I agree to all term, privacy policy and fees</label
+          >
+        </div>
+      </form>
+
+      <section id="footer">
+        <p>
+          Already have an account? <a href="./src/pages/login.html">Log in</a>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
