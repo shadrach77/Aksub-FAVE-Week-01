@@ -93,5 +93,5 @@ form.addEventListener("submit", function submitForm(event) {
   users.push(user);
   localStorage.setItem("users", JSON.stringify(users));
 
-  window.location.href = "./src/pages/successful.html";
+  window.location.href = "./src/pages/successful-register.html";
 });

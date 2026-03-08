@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="centering-container">
+      <section id="header">
+        <h1>Login to your account</h1>
+        <p>Enter your credentials to login to your account</p>
+      </section>
+
+      <form action="">
+        <div class="form-group" id="form-group-email">
+          <label for="email">Email<span id="label-asterisk">*</span></label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="text-input-field"
+            placeholder="johndoe@gmail.com"
+          />
+          <p class="empty-error error-message">This field can't be empty</p>
+        </div>
+
+        <div class="form-group" id="form-group-password">
+          <label for="password"
+            >Password<span id="label-asterisk">*</span></label
+          >
+          <input
+            type="text"
+            name="password"
+            id="password"
+            class="text-input-field"
+            placeholder="*******"
+          />
+          <p class="empty-error error-message">This field can't be empty</p>
+          <p id="incorrect-password-error" class="error-message">
+            Either wrong password or your account is not registered
+          </p>
+        </div>
+
+        <button type="submit" id="submit-button">Login</button>
+      </form>
+
+      <section id="footer">
+        <p>
+          Don't have an account?
+          <a href="/">Create an account</a>
+        </p>
+      </section>
+    </div>
+  </body>
+  <script src="/src/js/login.js"></script>
+</html>
